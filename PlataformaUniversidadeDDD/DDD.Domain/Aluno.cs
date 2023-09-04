@@ -22,6 +22,7 @@ namespace DDD.Domain
         [NotMapped]
         public bool Ativo { get; set; }
 
+       
         public List<Disciplina> Disciplinas { get; set; }
 
     }
