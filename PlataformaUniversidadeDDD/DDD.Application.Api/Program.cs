@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 //IOC - Dependency Injection
 builder.Services.AddScoped<IAlunoRepository, AlunoRepository>();
 builder.Services.AddScoped<IDisciplinaRepository, DisciplinaRepository>();
+builder.Services.AddScoped<IMatriculaRepository>, MatriculaRepository>();
 builder.Services.AddScoped<ApiContext, ApiContext>();
 
 builder.Services.AddControllers();
