@@ -1,18 +1,18 @@
 ﻿using DDD.Domain;
-using DDD.Infra.MemoryDb.Interfaces;
+using DDD.Infra.SqlServer.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DDD.Infra.MemoryDb.Repositories
+namespace DDD.Infra.SqlServer.Repositories
 {
     public class MatriculaRepository : IMatriculaRepository
     {
-        private readonly ApiContext _context;
+        private readonly SqlContext _context;
 
-        public MatriculaRepository(ApiContext context)
+        public MatriculaRepository(SqlContext context)
         {
             _context = context;
         }
